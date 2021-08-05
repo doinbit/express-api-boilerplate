@@ -1,9 +1,11 @@
 {
   "name": "express-api-boilerplate",
+  "description": "Boilerplate of express js based API with typescript",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
+  "main": "dist/server.js",
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node .",
     "lint": "eslint '{src,__test__}/**/*.ts'",
     "postinstall": "yarn run dist",
     "predist": "rimraf dist",
@@ -46,5 +48,8 @@
     "ts-node": "^10.1.0",
     "tsconfig-paths": "^3.10.1",
     "typescript": "^4.3.5"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
